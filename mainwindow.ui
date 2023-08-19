@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1325</width>
-    <height>884</height>
+    <width>1163</width>
+    <height>734</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -76,6 +76,12 @@
        <layout class="QVBoxLayout" name="verticalLayout_2">
         <item>
          <widget class="QWidget" name="widget" native="true">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>75</height>
+           </size>
+          </property>
           <property name="maximumSize">
            <size>
             <width>16777215</width>
@@ -94,17 +100,25 @@
             <widget class="QWidget" name="widget_16" native="true"/>
            </item>
            <item>
-            <spacer name="horizontalSpacer_4">
-             <property name="orientation">
-              <enum>Qt::Horizontal</enum>
+            <widget class="QLineEdit" name="lineEdit_4">
+             <property name="text">
+              <string>backup •</string>
              </property>
-             <property name="sizeHint" stdset="0">
-              <size>
-               <width>40</width>
-               <height>20</height>
-              </size>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="TypeSearchBtn">
+             <property name="text">
+              <string>查询</string>
              </property>
-            </spacer>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="typeResetBtn">
+             <property name="text">
+              <string>重置</string>
+             </property>
+            </widget>
            </item>
           </layout>
          </widget>
@@ -136,7 +150,33 @@
          </widget>
         </item>
         <item>
-         <widget class="QListWidget" name="listWidget"/>
+         <widget class="QTableWidget" name="typeTableWidget"/>
+        </item>
+        <item>
+         <widget class="QWidget" name="widget_8" native="true">
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>70</height>
+           </size>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_8">
+           <item>
+            <widget class="QPushButton" name="typePrevBtn">
+             <property name="text">
+              <string>上一页</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="typeNextBtn">
+             <property name="text">
+              <string>下一页</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
         </item>
        </layout>
       </widget>
@@ -197,14 +237,14 @@
             <widget class="QWidget" name="widget_6" native="true">
              <layout class="QHBoxLayout" name="horizontalLayout_7">
               <item>
-               <widget class="QPushButton" name="searchBtn">
+               <widget class="QPushButton" name="videoSearchBtn">
                 <property name="text">
                  <string>查询</string>
                 </property>
                </widget>
               </item>
               <item>
-               <widget class="QPushButton" name="resetBtn">
+               <widget class="QPushButton" name="videoResetBtn">
                 <property name="text">
                  <string>重置</string>
                 </property>
@@ -220,21 +260,21 @@
          <widget class="QWidget" name="widget_15" native="true">
           <layout class="QHBoxLayout" name="horizontalLayout_15">
            <item>
-            <widget class="QPushButton" name="pushButton_3">
+            <widget class="QPushButton" name="initConfigBtn">
              <property name="text">
               <string>初始化配置</string>
              </property>
             </widget>
            </item>
            <item>
-            <widget class="QPushButton" name="pushButton_4">
+            <widget class="QPushButton" name="videoImport">
              <property name="text">
               <string>视频导入</string>
              </property>
             </widget>
            </item>
            <item>
-            <widget class="QPushButton" name="pushButton_5">
+            <widget class="QPushButton" name="history">
              <property name="text">
               <string>历史推流记录</string>
              </property>
@@ -257,10 +297,63 @@
          </widget>
         </item>
         <item>
-         <widget class="QPushButton" name="pushButton_6">
-          <property name="text">
-           <string>PushButton</string>
-          </property>
+         <widget class="QTableWidget" name="videoTableWidget">
+          <column>
+           <property name="text">
+            <string>类别名称</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>描述</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>创建时间</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>最后修改时间</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>操作人</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>启用状态</string>
+           </property>
+          </column>
+         </widget>
+        </item>
+        <item>
+         <widget class="QWidget" name="widget_9" native="true">
+          <layout class="QHBoxLayout" name="horizontalLayout_16">
+           <item>
+            <widget class="QWidget" name="widget_13" native="true">
+             <layout class="QHBoxLayout" name="horizontalLayout_12">
+              <item>
+               <widget class="QPushButton" name="videoSearchBtn_2">
+                <property name="text">
+                 <string>上一页</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="videoResetBtn_2">
+                <property name="text">
+                 <string>下一页</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
          </widget>
         </item>
        </layout>
@@ -274,8 +367,8 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1325</width>
-     <height>29</height>
+     <width>1163</width>
+     <height>27</height>
     </rect>
    </property>
   </widget>

@@ -17,8 +17,11 @@ MainWindow::MainWindow(QWidget *parent)
     QTableWidget* Table = dynamic_cast<QTableWidget*>(ui->stackedWidget->widget(0));
     TableWidget* typeTable = new TableWidget(Table, this);
 
-    // 侧边栏按钮
+    //
+    ui->videoTableWidget->horizontalHeader()->setSectionResizeMode(QHeaderView::Stretch);
+    ui->typeTableWidget->horizontalHeader()->setSectionResizeMode(QHeaderView::Stretch);
 
+    // 侧边栏按钮
     connect(ui->videoManagerBtn, &QPushButton::clicked, ui->stackedWidget, [=](){
         ui->stackedWidget->setCurrentWidget(ui->videoManager);
     });

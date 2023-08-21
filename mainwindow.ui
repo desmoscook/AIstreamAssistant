@@ -150,7 +150,38 @@
          </widget>
         </item>
         <item>
-         <widget class="QTableWidget" name="typeTableWidget"/>
+         <widget class="QTableWidget" name="typeTableWidget">
+          <column>
+           <property name="text">
+            <string>类别名称</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>描述</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>创建时间</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>最后创建时间</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>操作人</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>操作</string>
+           </property>
+          </column>
+         </widget>
         </item>
         <item>
          <widget class="QWidget" name="widget_8" native="true">
@@ -300,32 +331,27 @@
          <widget class="QTableWidget" name="videoTableWidget">
           <column>
            <property name="text">
-            <string>类别名称</string>
+            <string>视频编号</string>
            </property>
           </column>
           <column>
            <property name="text">
-            <string>描述</string>
+            <string>视频名称</string>
            </property>
           </column>
           <column>
            <property name="text">
-            <string>创建时间</string>
+            <string>视频类别</string>
            </property>
           </column>
           <column>
            <property name="text">
-            <string>最后修改时间</string>
+            <string>视频描述</string>
            </property>
           </column>
           <column>
            <property name="text">
-            <string>操作人</string>
-           </property>
-          </column>
-          <column>
-           <property name="text">
-            <string>启用状态</string>
+            <string>操作</string>
            </property>
           </column>
          </widget>
@@ -368,7 +394,7 @@
      <x>0</x>
      <y>0</y>
      <width>1163</width>
-     <height>27</height>
+     <height>32</height>
     </rect>
    </property>
   </widget>
